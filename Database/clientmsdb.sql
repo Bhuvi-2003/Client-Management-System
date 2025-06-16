@@ -1,11 +1,4 @@
--- phpMyAdmin SQL Dump
--- version 4.9.0.1
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Nov 27, 2019 at 06:06 PM
--- Server version: 10.3.15-MariaDB
--- PHP Version: 7.2.19
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -18,13 +11,6 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
---
--- Database: `clientmsdb`
---
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `tbladmin`
 --
 
@@ -45,9 +31,6 @@ CREATE TABLE `tbladmin` (
 INSERT INTO `tbladmin` (`ID`, `AdminName`, `UserName`, `MobileNumber`, `Email`, `Password`, `AdminRegdate`) VALUES
 (1, 'Admin', 'admin', 8979555562, 'admin@gmail.com', 'f925916e2754e5e03f75dd58a5733251', '2019-10-21 07:01:36');
 
--- --------------------------------------------------------
-
---
 -- Table structure for table `tblclient`
 --
 
@@ -83,9 +66,6 @@ INSERT INTO `tblclient` (`ID`, `AccountID`, `AccountType`, `ContactName`, `Compa
 (5, 602410634, 'Active Account', 'Kundan Shah', 'JK Enterprises', 'JK Enterprises\r\nH-120,Shivala Varanasi', 'Varanasi', 'UP', 221001, 1213465464, 1645489799, 3465465465, 'jk@gmail.com', 'www.jk.com', 'ghjgjguyjgbhjghjghgcfdfgdgf', '202cb962ac59075b964b07152d234b70', '2023-12-26 10:42:52'),
 (6, 426546224, 'Active Account', 'Anuj Kumar', 'Accenture', 'New Delhi', 'New Delhi', 'Delhi', 110001, 9354778033, 9354778033, 9354778033, 'anujkr12345@gmail.com', 'www.accenture.in', 'New User', 'f925916e2754e5e03f75dd58a5733251', '2023-12-27 16:00:24');
 
--- --------------------------------------------------------
-
---
 -- Table structure for table `tblinvoice`
 --
 
@@ -126,9 +106,6 @@ INSERT INTO `tblinvoice` (`ID`, `Userid`, `ServiceId`, `BillingId`, `PostingDate
 (22, '6', '8', '847895377', '2023-12-27 16:00:56'),
 (23, '6', '9', '847895377', '2023-12-27 16:00:56');
 
--- --------------------------------------------------------
-
---
 -- Table structure for table `tblpage`
 --
 
@@ -150,9 +127,6 @@ INSERT INTO `tblpage` (`ID`, `PageType`, `PageTitle`, `PageDescription`, `Email`
 (1, 'aboutus', 'About Us', 'Here is the description about us...', NULL, NULL, '2023-10-24 07:54:52'),
 (2, 'contactus', 'Contact Us', 'Feel free to contact us for any queries...', 'bhawesh0100@gmail.com', 8252122567, '2023-10-24 07:56:56');
 
--- --------------------------------------------------------
-
---
 -- Table structure for table `tblservices`
 --
 
